@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="code.css">
+    <link rel="icon" href="Pics/RestaurantStorefront.jpeg">
+</head>
+<body>
+    <header class="fixed-stuff">
+        <a href="index.html">Home</a> |
+        <a href="Restaurant-Menu.html">Menu</a> |
+        <a href="About-Us.html">About Us</a>
+    </header>
+    <article>
+        <h1>Please fill out this form:</h1>
+        <form method="POST" action="feedback.php">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first" minlength="3" maxlength="10" placeholder="Enter First Name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last" minlength="4" maxlength="10" placeholder="Enter Last Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            
+            <label for="date-visited">Date Visited</label>
+            <input type="date" id="date-visited" name="date-visited">
+            
+            <label for="rating">Rate Us:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5">
+
+            <label for="comments">Please Leave a Comment:</label>
+            <textarea name="comment" id="comment" placeholder="add a comment"></textarea>
+
+            <input type="submit" />
+        </form>
+    </article>
+    
+</body>
+</html>
