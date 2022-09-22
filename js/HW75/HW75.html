@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="joe">Joe Biden</h1>
+    <script src="HW75.js"></script>
+    <script>
+        //const joe = app.pcsTools.get('#joe');
+        //app.pcsTools.setCss(joe, 'color', 'red');
+  
+        //const j = document.querySelector('#joe');
+        //j.style.color = 'red';
+  
+        /*const joe = app.pcsTools.wrap('#joe');
+        joe.setCss('color', 'red');
+        console.log(joe.getCss('color'));*/
+  
+        /*const joe = app.pcsTools.wrap('#joe');
+        joe.css('color', 'red');
+        console.log(joe.css('color'));
+        console.log(joe.css('color', undefined));
+        joe.click(event => console.log('joe was clicked!', event));
+        joe.hide();*/
+  
+        const joe = app.pcsTools.wrap('#joe')
+                      .css('color', 'red')
+                      .click(event => console.log('joe was clicked!', event))
+                      .flash(5000,100)
+                      .hide();
+  
+        setTimeout(() => joe.show(), 2000);
+      </script>
+</body>
+</html>
