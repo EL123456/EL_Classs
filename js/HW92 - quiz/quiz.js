@@ -5,6 +5,8 @@
         constructor(name,quantity,price) {
             this.item = name;
             this.quantity = quantity;
+
+            // SL - ok but 5/1 = 5 so need for special case :)
             if(this.quantity === 1) {
                 this.total = price;
             } else {
@@ -42,10 +44,15 @@
 
     const data = await fetchJson();
     console.log(data);
+    // SL - whats obj for?
     const obj = data;
     function createClasses(data){
         data.forEach(order => {
             order.items.forEach(item => {
+              // SL - wow, in place replacement of item obj with our Item. I think maybe a little bit overkill. Code is more complex then simply creating a new array (I cant say which is more efficient, but that would never be measurable anyway)
+              // SL - also no need for indexOf. forEach gives you index - you just need to accept it as a param like this
+              //order.items.forEach((item, index) => { ....
+              //(currently your dropping it by not having a param for it)
                 order.items.splice(order.items.indexOf(item,0),1,new Item(item.item,item.quantity,item.total));
             });
             data.splice(data.indexOf(order),1,new Order(order.customer, order.address,order.items));
@@ -72,9 +79,12 @@
         }
         return data;
     }
+
+    // SL - allTheClasses not a great meaningful name for a variable. How about orders?
     const allTheClasses = createClasses(data);
     console.log(allTheClasses);
     $( function() {
+      // SL - nice!
         theAccordion.accordion({
             collapsible: true,
             active: false,
@@ -83,3 +93,6 @@
         }).show();
     });
 }());
+
+// SL - nice!
+// SL - grade 100
