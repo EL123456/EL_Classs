@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+}
+nav {
+    background-color: antiquewhite;
+    padding: 1%;
+    display: flex;
+}
+#theUsers{
+    margin-left: auto;
+}
+.link {
+    text-decoration: underline;
+}
+.link:hover {
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+}
+#homeTitle,#blogLink {
+    align-self: center;
+}
+#homeTitle {
+    font-size: 5em;
+    margin: 2.5em 0 0 0;
+}
+#theContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#navLink {
+    width: 100%;
+}
+#userWindow {
+    width: 100%;
+}
+.contentContainer {
+    height: 9rem;
+    width: 9rem;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+}
+.postContentContainer {
+    width: 20%;
+    margin: 10px;
+    height: 150px;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    background-color: aliceblue;
+}
+#theInfo span {
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
+#theInfo .company {
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: none;
+}
+#theInfo #title {
+    text-decoration: underline dotted;
+}
+#theUsers:hover, .contentContainer:hover, #blogLink:hover, .postContentContainer:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+#homeLogo:hover {
+    color: crimson;
+}
+#theInfo{
+    position: absolute;
+    background-color: yellow;
+    align-self: center;
+}
