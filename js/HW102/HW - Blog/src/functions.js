@@ -10,8 +10,10 @@ export function createNavLinks(name,path) {
 
 function commentListener(commentId) {
     let showComments = false;
+    // SL - capitalized var is unusual...
     const CommentButton = $('#commentSwitch');
 
+    // SL - given your UI only shows 1 post at a time, not so much utility in hiding and showing commments...
     CommentButton.on('click', () => {
         if(!showComments) {
             showComments = true;
@@ -136,3 +138,5 @@ function infoPage(user) {
         }
     });
 }
+
+// SL - nice that you made a separate file for functions, but I think having multiple files divided into blogs, posts, comments might make it easier to follow and maintain

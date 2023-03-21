@@ -4,6 +4,7 @@ import { createNavLinks,getUserInfo,UserPage,loadPosts,displayPost,createUserDiv
 
 export const content = $('#theContent');
 
+// SL - so this is a full page reload. The rest of the links are all ajax... If you do want a full page reload why not just use href in anchor? (and the url actually doesnt work for me, we get a 404..)
 $('#homeLogo').on('click',() => document.location.href='/HW - Blog');
 $('#theUsers, #blogLink').on('click', UserPage);
 
@@ -26,10 +27,12 @@ export async function display(type,id) {
     id? fetchUrl = `${jsonUrl}/${type}?${id}` : fetchUrl = `${jsonUrl}/${type}`;
     const jsonData = await fetchJson(fetchUrl);
 
+    // SL -- cool. I like the "breadcrumbs" navigation.
     const navLink = $('<div id="navLink"></div>').appendTo(content);
+    // SL - as above, full page reload - and url doesnt work for me...
     const navLinkHome = createNavLinks('The Blog',() => document.location.href="/hw - blog");
     const navLinkUsers = createNavLinks('users',UserPage);
-    
+
 
     switch(type) {
         case 'users':
@@ -62,3 +65,6 @@ export async function display(type,id) {
             break;
     }
 }
+
+// SL - webpack nice! Why not use webpack dev server too to make it easier, and html webpack plugin to bring in html... also turn on map files for easier debugging...
+// SL - nice! no react version?
