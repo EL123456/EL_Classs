@@ -1,0 +1,11 @@
+#homeScreen {
+    color: white;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#homeScreen a {
+    color: white;
+}

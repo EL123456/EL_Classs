@@ -1,0 +1,60 @@
+#homePageWindow {
+    display: flex;
+    
+}
+#pageDiv {
+    width: 75%;
+    
+}
+#users{
+    /*width: fit-content;*/
+    overflow-y: auto;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*flex-wrap: wrap;*/
+}
+#infoDiv {
+    width: 25%;
+}
+.userDivs a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.userDivs {
+    background-color: white;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    cursor:zoom-in;
+}
+a {
+    text-decoration: none;
+    
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#modalDiv {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    z-index: 1;
+    background-color: yellow;
+    margin: 5% 30% 15% 30%;
+}
+.modal .userDivInfo {
+    color: black;
+}
+
+#modalDiv span {
+    cursor: pointer;
+}

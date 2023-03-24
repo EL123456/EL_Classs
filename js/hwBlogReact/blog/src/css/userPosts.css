@@ -1,0 +1,16 @@
+#singleBlogWindow {
+    display: flex;
+}
+#posts {
+    width: 75%;
+}
+#infoWindow {
+    width: 25%;
+    padding: 0.8%;
+}
+.postDivs{
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+}
+/* i need to add css grid...maybe... cuz i want to put in a sidebar with user information... or maybe make that in the user page, just have the title of the page be "whatever's blog" */

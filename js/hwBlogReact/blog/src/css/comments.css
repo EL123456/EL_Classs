@@ -1,0 +1,15 @@
+.commentDiv .name {
+    font-style: italic;
+}
+.commentDiv .body {
+    font-weight: bold;
+}
+.commentDiv {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0;
+    max-width: 40%;
+}
+.commentDiv p{
+    font-size: 12px;
+}
