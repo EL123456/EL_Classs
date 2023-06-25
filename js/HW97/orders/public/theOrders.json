@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "customer": "Alice",
+        "address": "123 Code Way",
+        "items": [
+            {
+                "id": 1,
+                "item": "cookies",
+                "quantity": 6,
+                "total": 7.5
+            },
+            {
+                "id": 2,
+                "item": "jelly beans",
+                "quantity": 20,
+                "total": 2
+            },
+            {
+                "id": 3,
+                "item": "orange juice",
+                "quantity": 1,
+                "total": 2
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "customer": "Bob",
+        "address": "456 Java Blvd",
+        "items": [
+            {
+                "id": 1,
+                "item": "orange juice",
+                "quantity": 3,
+                "total": 6
+            },
+            {
+                "id": 2,
+                "item": "grape juice",
+                "quantity": 5,
+                "total": 12.50
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "customer": "Cindy",
+        "address": "789 SQL Lane",
+        "items": [
+            {
+                "id": 1,
+                "item": "banana",
+                "quantity": 3,
+                "total": 3.99
+            },
+            {
+                "id": 2,
+                "item": "apple",
+                "quantity": 11,
+                "total": 3.63
+            },
+            {
+                "id": 3,
+                "item": "orange",
+                "quantity": 8,
+                "total": 3.52
+            }
+        ]
+    }
+]
