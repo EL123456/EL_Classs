@@ -1,0 +1,17 @@
+#Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navLinks{
+    border: 3px solid burlywood;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navLinks a.active {
+    color: palegoldenrod;
+}
