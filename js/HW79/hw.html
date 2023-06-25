@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #recipeSelectContainer, h1, #recipeContainer, h2, h3,ul {
+            display: flex;
+            justify-content: center;
+        }
+        #recipeContainer,ul {
+            flex-direction: column;
+        }
+
+
+    </style>
+<body>
+    <h1>Recipes</h1>
+    <div id="recipeSelectContainer">
+        <select id="recipes">
+            <option hidden>choose a recipe to view</option>
+        </select>
+    </div>
+    <div id="recipeContainer"></div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="hw.js"></script>
+</body>
+</html>

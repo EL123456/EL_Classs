@@ -1,0 +1,27 @@
+.messageBox {
+    background-color: lightblue;
+    box-sizing: border-box;
+    padding: 1em;
+    height: 162px;
+    width: 274px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -137px;
+    margin-top: -81px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.messageBox span {
+    overflow: auto;
+    height: 80%;
+    display: inline-block;
+}
+
+.messageBox .buttonDiv {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1em;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw2.css">
+</head>
+<body>
+    <input id="Message_Text"/>
+    <button id="display">show</button>
+
+    <script src="hw2.js"></script>
+    <script>
+        app.messageBox.show('HI DOES THIS WORK???');
+
+        const text = document.getElementById('Message_Text');
+        document.getElementById('display').addEventListener('click' ,()=>{
+            app.messageBox.show(text.value);
+        })
+    </script>
+</body>
+</html>
