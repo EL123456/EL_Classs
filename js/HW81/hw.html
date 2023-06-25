@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/448/250/desktop-wallpaper-cool-dark-purple-flower-border-backgrounds-for-powerpoint-cool-pink-and-black-backgrounds.jpg');
+            color: antiquewhite;
+            background-size: cover;
+        }
+        #display_wrapper {
+            display: flex;
+            align-content: center;
+            height: 90vh;
+            width: 98vw;
+        }
+        #display {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        #previous, #next {
+            align-self: center;
+        }
+        #viewer {
+            align-self: center;
+            width:60%;
+            height: 80%;
+        }
+
+        @media screen and (min-width: 860px) {
+            #viewer {
+                width: 40%;
+                height: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page-wrapper">
+        <input id="searchbar" placeholder="search for a folder" name="searchbar"/>
+        <!-- change css, of course... -->
+        <hr>
+
+        <div id="display_wrapper">
+            <div id="display">
+                <span>what are you looking for? the options are birds and kittens</span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="hw.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            width: 60%;
+            height: 60%;
+        }
+        body, ul{
+            display: flex
+        }
+        ul{
+            flex-direction: column;
+            list-style-type: none;
+        }
+        ul span{
+            display: block;
+        }
+        ul span:hover {
+            color: blue;
+        }
+        ul span:active {
+            color: aquamarine;
+        }
+        ul iframe {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                flex-wrap: wrap;
+            }
+            iframe {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- up next: build site with this data -->
+
+    <!-- fix css... very easy to do that -->
+    <iframe id="videoPlayer" height="60%" width="60%" ></iframe>
+    <div id="sidebar">
+        <!--do i need a div? or ul is fine? chti deis nisht yetzt-->
+        <ul>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="hw.js"></script>
+</body>
+</html>
