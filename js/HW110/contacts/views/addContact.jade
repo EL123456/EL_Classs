@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    form(method='POST')
+        div(class='formgroup')
+            label(for='first') first: 
+            if(contact)
+                input(name='first', required, value=contact.first)
+            else
+                input(name="first", required)
+        div(class='formgroup')
+            label(for="last") last: 
+            if(contact)
+                input(name='last', required, value=contact.last)
+            else
+                input(name="last", required)
+        div(class='formgroup')
+            label(for="email") email: 
+            if(contact)
+                input(name='email', required, value=contact.email)
+            else
+                input(name="email")
+        div(class='formgroup')
+            label(for="phone") phone: 
+            if(contact)
+                input(name='phone', required, value=contact.phone)
+            else
+                input(name='phone')
+        div(class='buttons')
+             button add
+             button(type='reset') reset
+             a(href='/contacts') cancel

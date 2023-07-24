@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    a(href="/contacts/addContact") Add Contact
+    table 
+        thead
+            tr
+                td first
+                td last
+                td email
+                td phone
+                td
+        tbody
+            if(contacts.length)
+                each contact in contacts
+                    tr
+                        td #{contact.first}
+                        td #{contact.last}
+                        td #{contact.email}
+                        td #{contact.phone}
+                        td
+                            a(href='/contacts/deleteContact/#{contact.id}') &#128686;
+                            a(href='/contacts/editContact/#{contact.id}') &#9997;
+            else 
+                tr 
+                    td(colspan="5") no contacts loaded
