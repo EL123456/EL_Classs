@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    display: contents;
+}
+
+#single_recipe, #info_display, #recipe_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#single_recipe h4 {
+    margin-bottom: 5px;
+}
+
+#info_display {
+    margin-bottom: 10px;
+}
+
+#single_recipe h1{
+    text-transform: capitalize;
+}
+
+/* change to look nicer after the javascript is working */
+#single_recipe img {
+    height: 350px;
+    width: 300px;
+}
+
+#recipe_form {
+    width: fit-content;
+    position: absolute;
+    background-color: beige;
+    border: 1px solid black ;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    h3= subtitle
+    p Hello #{name}! You have visited this site #{site_visits} times. That is wonderful! Please come again!
+    a(href='/logout')
+        button(type='button', id='logout_button') logout

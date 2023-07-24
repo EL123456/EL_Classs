@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/recipes.css">
+</head>
+<body>
+    <div id="recipe_display">
+        <div id="selection_display">
+            <select>
+                <option hidden>select a recipe</option>
+            </select>
+            <button id="add_recipe">add a recipe</button>
+        </div>
+        
+        <div id="single_recipe">
+            <h3>Select a Recipe</h3>
+        </div>
+    </div>
+
+    <form id="recipe_form">
+        <div>
+            <label>Name: 
+                <input id="name" name="name" required/>
+            </label>
+        </div>
+        <div>
+            <label>Picture:
+                <input id="picture" name="picture" required/>
+            </label>
+        </div>
+        <div>
+            <label id="ingredients_form">Ingredients: 
+            </label>
+        </div>
+        <div>
+            <button type="button" id="add_input">add another ingredient</button>
+            <button type="button" id="remove_input">remove all Ingredients</button>
+        </div>
+        
+        <div>
+            <button>save</button>
+            <button type="reset">reset</button>
+            <button type="button" id="cancel">cancel</button>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./javascripts/recipes.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  h3= subtitle
+  form(method="POST" action="/")
+    label Your name here: 
+      input(name='name') 
+    button submit name

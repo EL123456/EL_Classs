@@ -1,0 +1,16 @@
+#message_display {
+    width: 100%;
+    height: 20rem;
+    border: 2px solid salmon;
+}
+#chat_display {
+    display: none;
+}
+.msg_name{
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
